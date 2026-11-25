@@ -1,16 +1,16 @@
 package com.teragrep.bor_01.aip.pdi;
 
-import com.teragrep.bor_01.Jsonable;
+import com.teragrep.bor_01.NamespacedJsonable;
+import com.teragrep.bor_01.TimeWindow;
 import com.teragrep.bor_01.aip.BloomFilter;
 
-import java.time.Instant;
-import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
-public interface Reference extends Jsonable {
-    Instant epochHour();
+public interface Reference extends NamespacedJsonable {
+    TimeWindow timeWindow();
     String configurationItem();
     String sourceSystem();
-    List<BloomFilter> bloomFilters();
+    Set<BloomFilter> bloomFilters();
     UUID id();
 }

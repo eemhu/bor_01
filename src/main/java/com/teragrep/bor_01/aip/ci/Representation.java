@@ -1,8 +1,8 @@
 package com.teragrep.bor_01.aip.ci;
 
-import com.teragrep.bor_01.Jsonable;
+import com.teragrep.bor_01.NamespacedJsonable;
 
-public interface Representation extends Jsonable {
+public interface Representation extends NamespacedJsonable {
     String sourceType();
     String objectFormat();
 }
